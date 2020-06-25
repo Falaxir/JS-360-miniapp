@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Testination</title>
+        <style>
+            .main.countainer{
+                padding-top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ui inverted fixed menu">
+            <div class="header item" id="Titre"></div>
+        </div>
+        <form id="Filtres">
+            <input type="text" placeholder="Nom" id="filter_name" oninput="console.log('aille')">
+            <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" name="Filtres">
+                <option>Trier Prix</option>
+                <option>Croissant</option>
+                <option>Decroissant</option>
+            </select>
+        </form>
+        <table id="table_base">
+            <thead>
+            <tr class="ui countainer" id="table_title" v-for="titles in titles">
+                <th id="table_title" class="ui countainer" v-for="value in titles">{{ value }}</th>
+            </tr>
+            </thead>
+            <tbody id="table_content">
+            <tr class="ui countainer" v-for="product in product">
+                <th class="ui countainer" v-for="value in product" @click="pick_name(value)">{{ value }}</th>
+            </tr>
+            </tbody>
+        </table>
+        <div id="resultat"></div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="src/base/app.js"></script>
+        <script src="src/main.js"></script>
+        <script src="src/filter.js"></script>
+    </body>
+</html>

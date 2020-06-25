@@ -1,7 +1,11 @@
 # JS-360-miniapp
 Mini APP js
 
-# Language :
+# Information
+
+Une mini-app minimaliste fait entièrement de 0
+
+# Languages :
 
 - VueJS
 - Javascript
@@ -17,3 +21,8 @@ Mini APP js
 - Utilise le localstorage pour se souvenir de la dernière fiche consultée.
  
 - 2 pages : une vue liste et une vue détail produit, d’une recherche et d’un filtre par prix.
+
+# Ce que j'aimerais continuer a faire :
+
+- Les animations
+- Ameliorer l'interface
