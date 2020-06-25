@@ -1,5 +1,12 @@
+var backup_table_list = Table_Content.product.slice();
+
 function search_name(tofind) {
-    
+    for (let i = 0; i < Table_Content.product.length; i++) {
+        if (backup_table_list[i].find(element => element > tofind) == undefined)
+            Table_Content.product[i] = undefined
+        else
+            Table_Content.product[i] = backup_table_list[i]
+    }
 }
 
 function sort_name(params) {
@@ -21,7 +28,6 @@ function has_already_been_sorted(picked) {
                 return 0
         }
     }
-    console.log("isgay")
     return 84
 }
 

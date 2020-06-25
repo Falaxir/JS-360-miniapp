@@ -15,7 +15,7 @@
             <div class="header item" id="Titre"></div>
         </div>
         <form id="Filtres">
-            <input type="text" placeholder="Nom" id="filter_name" oninput="console.log('aille')">
+            <input type="text" placeholder="Nom" id="filter_name" oninput="search_name(value)">
             <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" name="Filtres">
                 <option>Trier Prix</option>
                 <option>Croissant</option>
