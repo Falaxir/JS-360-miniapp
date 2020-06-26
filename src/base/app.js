@@ -51,7 +51,7 @@ var Table_Content = new Vue({
     },
     mounted() {
         var self = this
-        $.getJSON("list.json", function(data) {
+        $.getJSON("assets/list.json", function(data) {
           self.product = data
           refresh_backuptable(data)
         })
