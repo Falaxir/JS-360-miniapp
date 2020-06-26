@@ -14,7 +14,7 @@ var test = [{
     "quantity": 211,
     "unit_cost": "$20.53"
   }, {
-    "name": "Super Toxicinator",
+    "name": "Dextromathorphan HBr",
     "supplier": "Schmitt-Weissnat",
     "quantity": 199,
     "unit_cost": "$209.53"

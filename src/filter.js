@@ -1,17 +1,16 @@
 var backup_table_list = Table_Content.product.slice();
 
-function search_name(tofind) {
-    for (let i = 0; i < Table_Content.product.length; i++) {
-        if (backup_table_list[i].find(element => element > tofind) == undefined)
-            Table_Content.product[i] = undefined
-        else
-            Table_Content.product[i] = backup_table_list[i]
-    }
-}
+function search_name(tofindht) {
+    var tablenum = 0
 
-function sort_name(params) {
-    for (let i = 0; i < data.length; i++) {
-        data.find(tofind)
+    for (let i = 0; i < backup_table_list.length; i++) {
+        Table_Content.product.pop()
+    }
+    for (let i = 0; i < backup_table_list.length; i++) {
+        if (backup_table_list[i].name.includes(tofindht) == true) {
+            Table_Content.product[tablenum] = backup_table_list[i]
+            tablenum++
+        }
     }
 }
 
