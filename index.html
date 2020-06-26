@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
-        <title>Liste des Médicaments</title>
+        <title>List Example</title>
         <style>
             .main.countainer{
                 padding-top: 50px;
@@ -15,6 +15,8 @@
             <div class="header item" id="Titre"></div>
         </div>
         <div id="Filtres">
+            <button id="TitleL">Example List</button>
+            <button id="Space"></button>
             <input type="text" placeholder="Search Name" id="filter_name" oninput="search_name(value)">
             <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" id="Selector" name="Filtres">
                 <option>Sort by Price</option>

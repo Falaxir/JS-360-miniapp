@@ -6,6 +6,15 @@ function refresh_backuptable(data) {
     backup_table_list = data.slice()
 }
 
+/* Detecte si le bouton du dernier element a besoin d'etre cache si il n'y a pas de donnees dans le fichier */
+function display_hide_lastselected() {
+    var tohide = document.getElementById("LastProduct");
+    if (localStorage.getItem("lastproduct") == undefined)
+        tohide.style.display = "none";
+    else
+        tohide.style.display = "inline";
+}
+
 /* Recherche le nom tape dans la barre de rechercher */
 function search_name(tofindht) {
     var tablenum = 0
@@ -25,6 +34,7 @@ function search_name(tofindht) {
 /* Affiche et modifie le bouton du dernier element consulte */
 function last_product_page_redirect(isclick) {
     if (isclick == 0) {
+        display_hide_lastselected()
         var lastdata = localStorage.getItem("lastproduct");
         var result = lastdata.slice(18, lastdata.indexOf("&"))
         document.getElementById("LastProduct").innerHTML = "Last Product : " + result
@@ -46,6 +56,7 @@ var Table_Content = new Vue({
           refresh_backuptable(data)
         })
         last_product_page_redirect(0)
+        display_hide_lastselected()
     }
 })
 

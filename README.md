@@ -7,7 +7,7 @@ Une mini-app minimaliste fait entièrement de 0 sans l'utilisation d'outils d'ai
 
 # Utilisation
 
-Voici l'interface :
+Voici l'interface : (Elle pourrais subir des modifications)
 
 
 
