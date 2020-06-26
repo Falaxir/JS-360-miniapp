@@ -15,7 +15,7 @@
             <div class="header item" id="Titre"></div>
         </div>
         <form id="Filtres">
-            <input type="text" placeholder="Nom" id="filter_name" oninput="search_name(value)">
+            <input type="text" placeholder="Rechercher" id="filter_name" oninput="search_name(value)">
             <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" name="Filtres">
                 <option>Trier Prix</option>
                 <option>Croissant</option>
@@ -38,7 +38,6 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="src/base/app.js"></script>
-        <script src="src/main.js"></script>
         <script src="src/filter.js"></script>
     </body>
 </html>
