@@ -8,18 +8,18 @@ function refresh_backuptable(data) {
 
 /* Detecte si le bouton du dernier element a besoin d'etre cache si il n'y a pas de donnees dans le fichier */
 function display_hide_lastselected() {
-    var tohide = document.getElementById("LastProduct");
+    var tohide = document.getElementById("LastProduct")
     if (localStorage.getItem("lastproduct") == undefined)
-        tohide.style.display = "none";
+        tohide.style.display = "none"
     else
-        tohide.style.display = "inline";
+        tohide.style.display = "inline"
 }
 
 /* Recherche le nom tape dans la barre de rechercher */
 function search_name(tofindht) {
     var tablenum = 0
 
-    document.getElementById("Selector").selectedIndex = "0";
+    document.getElementById("Selector").selectedIndex = "0"
     for (let i = 0; i < backup_table_list.length; i++) {
         Table_Content.product.pop()
     }
@@ -35,12 +35,12 @@ function search_name(tofindht) {
 function last_product_page_redirect(isclick) {
     if (isclick == 0) {
         display_hide_lastselected()
-        var lastdata = localStorage.getItem("lastproduct");
+        var lastdata = localStorage.getItem("lastproduct")
         var result = lastdata.slice(18, lastdata.indexOf("&"))
         document.getElementById("LastProduct").innerHTML = "Last Product : " + result
         return
     }
-    window.location = localStorage.getItem("lastproduct");
+    window.location = localStorage.getItem("lastproduct")
 }
 
 /* Prends et convertis un JSON en data et rafraichis le backup du tableau et le bouton du dernier element consulte*/

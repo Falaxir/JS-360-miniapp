@@ -27,7 +27,7 @@ function pick_name(value) {
     var producturl = get_product_page(value)
 
     window.location = producturl
-    localStorage.setItem("lastproduct", producturl);
+    localStorage.setItem("lastproduct", producturl)
 }
 
 /* Prends les caracteristiques du produits */
