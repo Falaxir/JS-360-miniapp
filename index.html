@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="index.css">
-        <title>Testination</title>
+        <title>Liste des Médicaments</title>
         <style>
             .main.countainer{
                 padding-top: 50px;
@@ -30,7 +30,7 @@
             </thead>
             <tbody id="table_content">
             <tr class="ui countainer" v-for="product in product">
-                <th class="ui countainer" v-for="value in product" @click="pick_name(value)">{{ value }}</th>
+                <th method="POST" class="ui countainer" v-for="value in product" href="getelement.php?name=$product.name" @click="pick_name(product)">{{ value }}</th>
             </tr>
             </tbody>
         </table>

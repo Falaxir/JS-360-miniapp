@@ -1,3 +1,7 @@
+/*
+idee : pour vuejs JSON faire comme backup table list, slice le tableau et le remplacer
+*/
+
 var backup_table_list = Table_Content.product.slice();
 
 function search_name(tofindht) {
@@ -43,4 +47,11 @@ function pick_price_sort(picked) {
 function pick_name(value) {
     console.log(value)
     console.log(Table_Content.product)
+    window.location = "product.html" + "?name=" + value.name + "&supplier=" + value.supplier + "&quantity=" + value.quantity + "&unit_cost=" + value.unit_cost
 }
+
+/*
+    "supplier": "Schmitt-Weissnat",
+    "quantity": 211,
+    "unit_cost": "$20.53"
+*/
