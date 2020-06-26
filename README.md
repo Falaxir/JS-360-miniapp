@@ -50,6 +50,10 @@ Liste des étapes :
 
 - Consultation des enjeux techniques (quel language spécifique à utiliser, ...)
 - Test spécifiques des fonctions essentielles (getJSON, Tableau)
+- Ajout d'une interface basique (Tableau, puis barre de recherche, puis filtre prix)
+- Lier les interfaces et les assembler pour former un site.
+- Netoyage du code, ajout de l'aide pour modification du code.
+- Amélioration de l'interface.
 
 # Edition
 
