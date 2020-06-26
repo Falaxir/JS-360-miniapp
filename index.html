@@ -16,11 +16,12 @@
         </div>
         <div id="Filtres">
             <input type="text" placeholder="Rechercher" id="filter_name" oninput="search_name(value)">
-            <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" name="Filtres">
+            <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" id="Selector" name="Filtres">
                 <option>Trier Prix</option>
                 <option>Croissant</option>
                 <option>Decroissant</option>
             </select>
+            <button id="LastProduct" onclick="last_product_page_redirect(1)"></button>
         </div>
         <table id="table_base">
             <thead>

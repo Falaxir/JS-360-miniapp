@@ -14,6 +14,7 @@ function refresh_backuptable(data) {
 function search_name(tofindht) {
     var tablenum = 0
 
+    document.getElementById("Selector").selectedIndex = "0";
     for (let i = 0; i < backup_table_list.length; i++) {
         Table_Content.product.pop()
     }
@@ -23,6 +24,16 @@ function search_name(tofindht) {
             tablenum++
         }
     }
+}
+
+function last_product_page_redirect(isclick) {
+    if (isclick == 0) {
+        var lastdata = localStorage.getItem("lastproduct");
+        var result = lastdata.slice(18, lastdata.indexOf("&"))
+        document.getElementById("LastProduct").innerHTML = "Last Product : " + result
+        return
+    }
+    window.location = localStorage.getItem("lastproduct");
 }
 
 var Table_Content = new Vue({
@@ -36,6 +47,7 @@ var Table_Content = new Vue({
           self.product = data
           refresh_backuptable(data)
         })
+        last_product_page_redirect(0)
     }
 })
 
