@@ -26,6 +26,29 @@ th, td {
 
 /* Definitions specifiques */
 
+#Selector {
+    border: 2px solid rgb(255, 203, 91);
+    background-color: rgb(255, 244, 181);
+    border-radius: 3px;
+    padding-right: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#filter_name {
+    border: 3px solid rgb(56, 56, 56);
+    background-color: rgb(255, 244, 181);
+    border-radius: 3px;
+    padding-right: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#LastProduct {
+    border: 2px solid rgb(255, 203, 91);
+    background-color: rgb(255, 244, 181);
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+}
+
 #Titre {
     color: rgb(165, 42, 42);
     position: fixed;
@@ -56,10 +79,6 @@ th, td {
     margin-right: auto;
     margin-bottom: auto;
 }
-
-/*
-EXAMPLE
-*/
 
 #table_base {
     border: 2px solid rgb(66, 185, 131);

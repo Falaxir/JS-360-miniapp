@@ -48,6 +48,20 @@ Liste des étapes :
 - Consultation des enjeux techniques (quel language spécifique à utiliser, ...)
 - Test spécifiques des fonctions essentielles (getJSON, Tableau)
 
+# Edition
+
+Utiliser de préférence "Visual Studio Code" avec l'extension "Live Server" pour le serveur WEB
+
+# Ajouter une colonne :
+
+Pour ajouter une colonne, suivez les instructions :
+
+- Ajouter dans le fichier `list.json` le nome de la nouvelle colonne du tableau
+- Ajouter dans la variable `Table_Title` le titre de la nouvelle colonne
+- Ajouter dans la fonction `get_product_page` le titre de la nouvelle colonne (ex : `+ "&newcol=" + value.newcol`)
+- Ajouter dans le fichier `product.html` ajouter une `div` avec le nom de la nouvelle colonne (Editer le fichier `product.css` pour editer le style)
+- Ajouter dans la fonction `title_get_product` le titre de la nouvelle colonne et le nom de votre `div` (défini précédament)
+
 # Ce qui n'est pas présent actuellement mais en cours de développement :
 
 - Les animations

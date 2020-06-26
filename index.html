@@ -15,11 +15,11 @@
             <div class="header item" id="Titre"></div>
         </div>
         <div id="Filtres">
-            <input type="text" placeholder="Rechercher" id="filter_name" oninput="search_name(value)">
+            <input type="text" placeholder="Search Name" id="filter_name" oninput="search_name(value)">
             <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" id="Selector" name="Filtres">
-                <option>Trier Prix</option>
-                <option>Croissant</option>
-                <option>Decroissant</option>
+                <option>Sort by Price</option>
+                <option>Lowest Price</option>
+                <option>Highest Price</option>
             </select>
             <button id="LastProduct" onclick="last_product_page_redirect(1)"></button>
         </div>
