@@ -13,9 +13,10 @@ Voici l'interface : (Elle pourrais subir des modifications)
 
 ![alt text](https://github.com/Falaxir/JS-360-miniapp/blob/master/Example-app.png?raw=true)
 
-On peux y effectuer une recherche d'un nom en particulier.
-Ainsi que trier les résultats par ordre de prix croissant/décroissant
-Cliquer sur une ligne ou une case du produit affiche la liste détaillée
+- On peux y effectuer une recherche d'un nom en particulier.
+- Ainsi que trier les résultats par ordre de prix croissant/décroissant
+- Cliquer sur une ligne ou une case du produit affiche la liste détaillée
+- Bouton pour acceder au dernier produit consulté
 
 # Languages :
 
