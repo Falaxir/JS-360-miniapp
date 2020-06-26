@@ -1,5 +1,6 @@
 
-/* 1 = croissant 2 = decroissant */
+/*  Trie les prix par ordre croissant/decroissant
+    picked : 1 = croissant 2 = decroissant */
 function pick_price_sort(picked) {
     if (picked == 1) {
     Table_Content.product.sort(function(a, b){
@@ -21,6 +22,7 @@ function pick_price_sort(picked) {
         }
 }
 
+/* Charge et change la page du produit */
 function pick_name(value) {
     var producturl = get_product_page(value)
 
@@ -29,6 +31,7 @@ function pick_name(value) {
     console.log(producturl)
 }
 
+/* Prends les caracteristiques du produits */
 function get_product_page(value) {
     return "product.html" + "?name=" + value.name + "&supplier=" + value.supplier + "&quantity=" + value.quantity + "&unit_cost=" + value.unit_cost
 }

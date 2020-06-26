@@ -1,16 +1,12 @@
+/* Fais une sauvegarde du tableau pour la recherche*/
 var backup_table_list = []
 
-var Table_Lignes = new Vue({
-    el: "#tablelines",
-    data: {
-        lines: 0
-    }
-})
-
+/* Rafraichis le backup du tableau */
 function refresh_backuptable(data) {
     backup_table_list = data.slice()
 }
 
+/* Recherche le nom tape dans la barre de rechercher */
 function search_name(tofindht) {
     var tablenum = 0
 
@@ -26,6 +22,7 @@ function search_name(tofindht) {
     }
 }
 
+/* Affiche et modifie le bouton du dernier element consulte */
 function last_product_page_redirect(isclick) {
     if (isclick == 0) {
         var lastdata = localStorage.getItem("lastproduct");
@@ -36,6 +33,7 @@ function last_product_page_redirect(isclick) {
     window.location = localStorage.getItem("lastproduct");
 }
 
+/* Prends et convertis un JSON en data et rafraichis le backup du tableau et le bouton du dernier element consulte*/
 var Table_Content = new Vue({
     el: "#table_content",
     data: {
@@ -51,6 +49,7 @@ var Table_Content = new Vue({
     }
 })
 
+/* Titres du tableau */
 var Table_Title = new Vue({
     el: "#table_title",
     data: {
