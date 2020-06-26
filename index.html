@@ -14,14 +14,14 @@
         <div class="ui inverted fixed menu">
             <div class="header item" id="Titre"></div>
         </div>
-        <form id="Filtres">
+        <div id="Filtres">
             <input type="text" placeholder="Rechercher" id="filter_name" oninput="search_name(value)">
             <select onclick="if (typeof(this.selectedIndex) != 'undefined') pick_price_sort(this.selectedIndex)" name="Filtres">
                 <option>Trier Prix</option>
                 <option>Croissant</option>
                 <option>Decroissant</option>
             </select>
-        </form>
+        </div>
         <table id="table_base">
             <thead>
             <tr class="ui countainer" id="table_title" v-for="titles in titles">

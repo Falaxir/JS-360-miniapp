@@ -7,8 +7,9 @@ Une mini-app minimaliste fait entièrement de 0 sans l'utilisation d'outils d'ai
 
 # Languages :
 
-- VueJS
+- VueJS (2.6.11)
 - Javascript
+- jquery (3.5.1)
 
 # Ce que l'app fais :
 
