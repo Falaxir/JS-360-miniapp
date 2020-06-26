@@ -40,7 +40,7 @@ Voici l'interface : (Elle pourrais subir des modifications)
 
 ## Optionel
 
-- L'application devais etre facilement modifiable (pour ajouter de nouvelles données avec de nouvelles colones, nouvelles lignes, ...)
+- L'application doit etre facilement modifiable (pour ajouter de nouvelles données avec de nouvelles colones, nouvelles lignes, ...)
 - Séparer le travail dans plusieurs fonctions clefs (Eviter les fonctions trop longues et pas claires)
 - Commenter les fonctions pour savoir quel tache est faite pour cette fonction.
 
@@ -49,7 +49,7 @@ Voici l'interface : (Elle pourrais subir des modifications)
 Liste des étapes :
 
 - Consultation des enjeux techniques (quel language spécifique à utiliser, ...)
-- Test spécifiques des fonctions essentielles (getJSON, Tableau)
+- Test spécifiques des fonctions essentielles (obtenir le JSON, Tableau)
 - Ajout d'une interface basique (Tableau, puis barre de recherche, puis filtre prix)
 - Lier les interfaces et les assembler pour former un site.
 - Netoyage du code, ajout de l'aide pour modification du code.
@@ -57,13 +57,13 @@ Liste des étapes :
 
 # Edition
 
-Utiliser de préférence "Visual Studio Code" avec l'extension "Live Server" pour le serveur WEB
+Utiliser de préférence `Visual Studio Code` avec l'extension `Live Server` pour le serveur WEB
 
 # Ajouter une colonne :
 
 Pour ajouter une colonne, suivez les instructions :
 
-- Ajouter dans le fichier `list.json` le nome de la nouvelle colonne du tableau
+- Ajouter dans le fichier `list.json` le titre de la nouvelle colonne du tableau
 - Ajouter dans la variable `Table_Title` le titre de la nouvelle colonne
 - Ajouter dans la fonction `get_product_page` le titre de la nouvelle colonne (ex : `+ "&newcol=" + value.newcol`)
 - Ajouter dans le fichier `product.html` ajouter une `div` avec le nom de la nouvelle colonne (Editer le fichier `product.css` pour editer le style)
