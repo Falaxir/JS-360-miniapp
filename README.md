@@ -1,5 +1,5 @@
 # JS-360-miniapp
-Mini APP js
+Mini APP en javascript
 
 # Information
 
@@ -73,4 +73,4 @@ Pour ajouter une colonne, suivez les instructions :
 
 - Les animations
 - Ameliorer l'interface
-- Afficher l'interface selon la taille de l'ecran
+- Agrandir l'interface si l'ecran est plus grand que celle-ci
