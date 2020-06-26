@@ -7,9 +7,11 @@ Une mini-app minimaliste fait entièrement de 0 sans l'utilisation d'outils d'ai
 
 # Utilisation
 
+Essai en ligne en utilisant ce lien : https://falaxir.fr/JS-360-miniapp/
+
 Voici l'interface : (Elle pourrais subir des modifications)
 
-
+![alt text](https://github.com/Falaxir/JS-360-miniapp/blob/master/List_Example.png?raw=true)
 
 On peux y effectuer une recherche d'un nom en particulier.
 Ainsi que trier les résultats par ordre de prix croissant/décroissant
