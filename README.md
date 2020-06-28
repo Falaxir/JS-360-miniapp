@@ -4,8 +4,8 @@ Mini APP en javascript
 # Information
 
 Une mini-app minimaliste fait entièrement de A à Z.
-Elle affiche un tableau qui contient les données sotckées dans un JSON.
-On peux y consulter un produit en détail.
+Elle affiche un tableau qui contient les données stockées dans un JSON.
+On peux y consulter un produit en détail en cliquant sur la ligne.
 
 # Utilisation
 
