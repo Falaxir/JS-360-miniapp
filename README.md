@@ -3,7 +3,9 @@ Mini APP en javascript
 
 # Information
 
-Une mini-app minimaliste fait entièrement de 0 sans l'utilisation d'outils d'aide tel que les frameworks
+Une mini-app minimaliste fait entièrement de A à Z.
+Elle affiche un tableau qui contient les données sotckées dans un JSON.
+On peux y consulter un produit en détail.
 
 # Utilisation
 
