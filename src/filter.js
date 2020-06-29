@@ -1,6 +1,9 @@
 /* Trie les prix par ordre croissant/decroissant
    picked : 1 = croissant 2 = decroissant */
 function pick_price_sort(picked) {
+    if (picked != 1 && picked != 2)
+        return 84
+
     Table_Content.product.sort(function(a, b){
         return sorting_prices(a, b, picked)
       })
