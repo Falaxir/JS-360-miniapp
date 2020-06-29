@@ -3,10 +3,10 @@ Mini APP en javascript
 
 # Information
 
-Une mini-app minimaliste fait entièrement de A à Z.
-Utilisation de CDN pour VueJS
-Elle affiche un tableau qui contient les données stockées dans un JSON.
-On peux y consulter un produit en détail en cliquant sur la ligne.
+- Une mini-app minimaliste fait entièrement de A à Z.
+- Utilisation de CDN pour VueJS
+- Elle affiche un tableau qui contient les données stockées dans un JSON.
+- On peux y consulter un produit en détail en cliquant sur la ligne.
 
 # Utilisation
 
@@ -46,6 +46,7 @@ Voici l'interface : (Elle pourrais subir des modifications)
 - L'application doit etre facilement modifiable (pour ajouter de nouvelles données avec de nouvelles colones, nouvelles lignes, ...)
 - Séparer le travail dans plusieurs fonctions clefs (Eviter les fonctions trop longues et pas claires)
 - Commenter les fonctions pour savoir quel tache est faite pour cette fonction.
+- Application Légère et simple (d'ou l'utilisation de CDN)
 
 # Roadmap
 
