@@ -1,25 +1,28 @@
-
-/*  Trie les prix par ordre croissant/decroissant
-    picked : 1 = croissant 2 = decroissant */
+/* Trie les prix par ordre croissant/decroissant
+   picked : 1 = croissant 2 = decroissant */
 function pick_price_sort(picked) {
-    if (picked == 1) {
     Table_Content.product.sort(function(a, b){
-        var x = a.unit_cost
-        var y = b.unit_cost
-        if (x < y) {return -1}
-        if (x > y) {return 1}
-        return 0
+        return sorting_prices(a, b, picked)
       })
-    }
-    if (picked == 2) {
-        Table_Content.product.sort(function(a, b){
-            var x = a.unit_cost
-            var y = b.unit_cost
-            if (x < y) {return 1}
-            if (x > y) {return -1}
-            return 0
-          })
-        }
+}
+
+/* Trie les prix par ordre croissant/decroissant
+   sort : 1 = croissant 2 = decroissant */
+function sorting_prices(a, b, sort) {
+    var x = a.unit_cost
+    var y = b.unit_cost
+
+    if (x < y)
+        if (sort == 1)
+            return -1
+        else
+            return 1
+    if (x > y)
+        if (sort == 1)
+            return 1
+        else
+            return -1
+    return 0
 }
 
 /* Charge et change la page du produit */

@@ -9,6 +9,7 @@ function refresh_backuptable(data) {
 /* Detecte si le bouton du dernier element a besoin d'etre cache si il n'y a pas de donnees dans le fichier */
 function display_hide_lastselected() {
     var tohide = document.getElementById("LastProduct")
+
     if (localStorage.getItem("lastproduct") == undefined)
         tohide.style.display = "none"
     else
@@ -35,13 +36,19 @@ function search_name(tofindht) {
 function last_product_page_redirect(isclick) {
     if (isclick == 0) {
         display_hide_lastselected()
+
         var lastdata = localStorage.getItem("lastproduct")
         var result = lastdata.slice(18, lastdata.indexOf("&"))
+
         document.getElementById("LastProduct").innerHTML = "Last Product : " + result
-        return
+        return 0
     }
     window.location = localStorage.getItem("lastproduct")
 }
+
+/*
+VueJS
+*/
 
 /* Prends et convertis un JSON en data et rafraichis le backup du tableau et le bouton du dernier element consulte*/
 var Table_Content = new Vue({

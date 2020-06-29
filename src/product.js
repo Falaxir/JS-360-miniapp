@@ -1,4 +1,5 @@
-/* Affiche la liste des produits et change le titre de la page */
+/* Affiche la liste des produits et change le titre de la page du produit
+    (product.html)  */
 function title_get_product() {
     let params = new URLSearchParams(location.search)
     var name = params.get('name')
