@@ -1,3 +1,8 @@
+# Stage
+Réalisé en un weekend pour test entrée en stage dans une entreprise (qui n'a pas été fait malheureusement). 1ere Année école en informatique
+Depuis le temps, le code est obsolète et peut être largement amélioré
+Je passe ce repo en archive.
+
 # JS-360-miniapp
 Mini APP en javascript
 
